@@ -5,23 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password Project</title>
-  <script src="main.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  
 </head>
 <body>
-  <h1>My page works</h1>
-  <input name="searchTxt" type="text" maxlength="512" id="password" class="searchField"/>
-  <button onclick="checkPassword()">Ok</button>
-
-  <div>
-    <img src="./assets/xmark.png">
-    <h2 id="req1">Longitud de 10 caracteres</h2>
-  </div>
-  
-  <h2 id="req2">Numeros</h2>
-  <h2 id="req3">Mayusculas</h2>
-  <h2 id="req4">Minusculas</h2>
-  <h2 id="req5">Simbolos</h2>
-  <h2 id="req6">Caracteres especiales</h2>
-
+  <section >
+    <div class="card">
+      <h1> Change Password </h1>
+      <form action="" class="form">
+        <label for="pass"> Password </label>
+        <input type="password" id="password">
+        <div class="password-requirements">
+          <img id="lengthMark" src="" alt=""> <p> Longitud 10 caracteres </p>
+          <img id="numMark" src="" alt=""> <p> Números </p>
+          <img id="capMark" src="" alt=""> <p> Mayúsculas </p>
+          <img id="minMark" src="" alt=""> <p> Minúsculas </p>
+          <img id="simMark" src="" alt=""> <p> Símbolos </p>
+          <img id="charMark" src="" alt=""> <p> Caracteres especiales </p>
+        </div>
+        <button type="button" id=""> Confirmar contraseña </button>
+      </form>
+    </div>
+  </section>
+  <script src="./main.js"></script>
 </body>
 </html>
